@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PU2OMY - Projetos de Rádio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1120;
+      color: #e2e8f0;
+    }
+
+    /* HEADER */
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background: #020617;
+      border-bottom: 1px solid #1e293b;
+      z-index: 1000;
+    }
+
+    .nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+    }
+
+    .nav a {
+      color: #cbd5f5;
+      margin-left: 15px;
+      text-decoration: none;
+    }
+
+    .nav a:hover {
+      color: #38bdf8;
+    }
+
+    /* HERO */
+    .hero {
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      color: #38bdf8;
+    }
+
+    .hero p {
+      margin-top: 10px;
+      color: #94a3b8;
+    }
+
+    /* CONTAINER */
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 80px 20px;
+    }
+
+    /* SEÇÕES */
+    .section {
+      margin-top: 60px;
+    }
+
+    h2 {
+      color: #38bdf8;
+      margin-bottom: 20px;
+    }
+
+    /* CARDS */
+    .card {
+      background: #020617;
+      border: 1px solid #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card table {
+      padding: 10px;
+      width: 100%;
+    }
+
+    .card tr,
+    .card th,
+    .card td {
+      border: 1px solid #fff;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    /* BADGE */
+    .badge {
+      display: inline-block;
+      background: #1e293b;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin: 5px 5px 0 0;
+      font-size: 12px;
+    }
+
+    /* IMAGEM */
+    img {
+      max-width: 600px;
+      border-radius: 8px;
+      margin-top: 10px;
+
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #1e293b;
+      margin-top: 40px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="nav">
+      <strong>PU2OMY</strong>
+      <div>
+        <a href="#sobre">Sobre</a>
+        <a href="#fonte">Fonte 13,8V</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Projetos de Rádio & Eletrônica</h1>
+      <p>Sejam Bem vindos Sou o William, Operando de Guarulhos Classe C.</p>
+    </div>
+  </section>
+  <div class="container">
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+      <h2>Sobre</h2>
+      <div class="card">
+        <p>
+          Página dedicada ao desenvolvimento de projetos voltados ao rádio amador,
+          com foco em soluções práticas, testes reais e compartilhamento de conhecimento técnico.
+
+        </p>
+      </div>
+    </section>
+
+    <!-- FONTE -->
+    <section id="fonte" class="section">
+      <h2>Equipamentos</h2>
+
+      <div class="card">
+        <h3>Especificações</h3>
+        <span class="badge">Radio: Kenwood TS-2000X</span>
+        <span class="badge">Antena: Vertical V350 CAMP</span>
+        <span class="badge">Modos: FT8, VarAC, SSTV e CW</span>
+      </div>
+      <div class="card">
+        <h3>Resultados recentes</h3>
+        <p>
+          Durante os testes, a fonte apresentou excelente estabilidade,
+          mantendo tensão constante sob diferentes cargas.
+          <span>Operando com apenas 20W, meu sinal ja alcancou a India e os EUA em 10m e 12m!</span>
+        </p>
+        <table class="table">
+          <tbody>
+            <tr style="background-color: #004d99; color: white;">
+              <th>Band</th>
+              <th>Modes Tested</th>
+              <th>Power (W)</th>
+              <th>Best DX achieved</th>
+              <th>Station Status</th>
+            </tr>
+            <tr style="background-color: #f2f2f2; color: #000;">
+              <td><b>10m</b></td>
+              <td>FT8, VarAC, SSTV, CW</td>
+              <td>20W</td>
+              <td>Chile (CD3PFL)</td>
+              <td>Active &amp; Strong (SNR -02dB)</td>
+            </tr>
+            <tr style="background-color: #0b1120; color:#e2e8f0 ;">
+              <td><b>12m</b></td>
+              <td>FT8</td>
+              <td>20W</td>
+              <td>India / USA</td>
+              <td>Confirmed by PSK Reporter</td>
+            </tr>
+            <tr style="background-color: #f2f2f2; color: #000;">
+              <td><b>30m</b></td>
+              <td>WSPR</td>
+              <td>5W</td>
+              <td>Arkansas (USA)</td>
+              <td>Extreme QRP Success</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card">
+        <h3>Latest DX Success!</h3>
+        <p>My first VarAC contact with Chile (SNR -02dB) using 20W!</p>
+        <img src="./latest.jpg">
+      </div>
+
+      <div class="card">
+        <h3>transmissÃ£o e recepÃ§Ã£o da minha estaÃ§Ã£o em FT8</h3>
+        <p>
+          RecepÃ§Ã£o e transmissÃ£o em ft8 da minha estaÃ§Ã£o registrado na faixa dos 10m
+        </p>
+        <img src="./pskmap.png">
+
+      </div>
+
+      <div class="card">
+        <h3>Caso de sucesso</h3>
+        <p>
+          Teste da antena v350camp com apenas 5w no modo ft8
+        </p>
+        <img src="./teste_antena.jpg">
+        <p>
+          Uma otima transmissÃ£o com apenas 5w!
+        </p>
+      </div>
+
+
+
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section">
+      <h2>Outros Projetos</h2>
+
+      <div class="grid">
+
+        <div class="card">
+          <h3>📡 Antena</h3>
+          <p>Construção e testes de antenas para rádio amador.</p>
+        </div>
+
+        <div class="card">
+          <h3>🔬 Experimentos</h3>
+          <p>Medições e testes com equipamentos eletrônicos.</p>
+        </div>
+
+        <div class="card">
+          <h3>⚡ Eletrônica</h3>
+          <p>Projetos diversos envolvendo circuitos e fontes.</p>
+        </div>
+
+      </div>
+      <div>
+        <img src="https://s01.flagcounter.com/count2/eHgp/bg_A3FCFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0">
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+      <h2>Contato</h2>
+      <div class="card">
+        <p>Email: seuemail@email.com</p>
+        <p>Indicativo: PU2OMY</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© 2026 - PU2OMY</p>
+  </footer>
+
+</body>
+
+</html>
